@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Condensed:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+body, html {
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100%; /* Ensure body and html can grow */
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.navbar-brand {
+  font-family: 'Encode Sans Semi Condensed', sans-serif;
+  font-size: 29px;
+  font-weight: 500;
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Take the default text color */
+  transition: color 0.3s ease; /* Transition for color change */
+}
+
+.navbar-light {
+  background-color: white !important;
+}
+
+.header .navbar-brand:hover {
+  color: #229e6f; /* Darker color on hover */
+}
+
+.navbar-nav {
+  margin: 0 auto;
+}
+
+.auth-buttons button {
+  background-color: #2AB683;
+  color: #fff;
+  border: none;
+  padding: 10px 35px;
+  margin-left: 10px;
+  cursor: pointer;
+  border-radius: 25px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for background and text color */
+}
+
+.auth-buttons button.log-in {
+  background-color: transparent;
+  color: #2AB683;
+  border: 1px solid #2AB683;
+  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease; /* Smooth transition for background, border, and text color */
+}
+
+.auth-buttons button:hover {
+  background-color: #229e6f; /* Darker green on hover */
+  color: #fff;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus,
+.navbar-nav .nav-link:active {
+  color: #229e6f; /* Green color on hover, focus, and active */
+}
+
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white; /* Ensuring the background of the hero section is white */
+  width: 100%;
+  height: 400px; /* Increase height as needed */
+  padding: 0 20px; /* Add padding around the hero section */
+  box-sizing: border-box; /* Ensure padding is included in the width/height calculation */
+}
+
+.hero-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F6FCFA; /* Light greenish background color */
+  width: 50%;
+  height: 100%;
+  padding: 20px;
+}
+
+.hero-text-background {
+  padding: 20px;
+}
+
+.hero-text h1 {
+  font-size: 3rem; /* Increase font size */
+}
+
+.hero-text p {
+  font-size: 1rem; /* Decrease font size */
+  color: #A6A9A8; /* Set text color */
+  margin-bottom: 20px;
+}
+
+.hero-image {
+  width: 50%;
+  height: 100%;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the entire area without distortion */
+  border-radius: 0; /* Remove border radius */
+}
+
+.popular-section {
+  padding: 0 20px; /* Add padding to the left and right */
+  margin-top: 0; /* Remove top margin */
+  padding-top: 20px; /* Add padding to separate sections */
+  margin-left: 0;
+  margin-right: auto;
+  max-width: 100%;
+}
+
+.footer {
+  margin-top: auto;
+  padding: 10px 0;
+}
+
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.popular-section h2 {
+  text-align: left;
+}
+
+.card-body {
+  text-align: center;
+}
+
+.popular-section .row {
+  justify-content: flex-start;
+}
+
+/* Custom chip dimensions */
+.custom-chip {
+  width: 300px; /* Fixed width */
+  height: 400px; /* Adjust height */
+  border-radius: 20px;
+  flex-shrink: 0; /* Prevent shrinking */
+}
+
+/* Carousel styles */
+.card-carousel {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: auto; /* Ensure the carousel can grow */
+}
+
+.carousel-track-container {
+  overflow: hidden;
+  width: 100%;
+  height: auto; /* Ensure the container can grow */
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  height: auto; /* Ensure the track can grow */
+}
+
+.carousel-slide {
+  min-width: 300px; /* Fixed width */
+  margin-right: 10px;
+  height: auto; /* Ensure the slides can grow */
+}
+
+.carousel-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  display: none;
+}
+
+.card-carousel:hover .carousel-control {
+  display: block;
+}
+
+.carousel-control.prev {
+  left: 10px;
+}
+
+.carousel-control.next {
+  right: 10px;
+}
+
+
