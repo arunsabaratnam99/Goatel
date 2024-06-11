@@ -5,14 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-  <link rel="stylesheet" href="services.css">
+  <link rel="stylesheet" href="booking.css">
   <link rel="stylesheet" href="header.css">
   <link rel="stylesheet" href="footer.css">
   <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Condensed:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <title>Services</title>
+  <title>Book an Appointment</title>
+
 </head>
 <body class="bg-white">
-
   <div class="d-flex flex-column min-vh-100">
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light header border-bottom">
@@ -37,66 +37,66 @@
       </div>
     </nav>
 
-    <!-- Services Section -->
-    <section class="services-section">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2 class="section-title">Our Services</h2>
-            <p class="section-subtitle">Discover the range of services we offer to make your stay and travel experience memorable.</p>
+    <!-- Booking Form -->
+    <div class="container my-5">
+      <h2 class="text-center">Book an Appointment</h2>
+      <form id="booking-form" class="mt-4">
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="service">Service</label>
+            <select id="service" class="form-control" required>
+              <option selected disabled value="">Choose a service...</option>
+              <option>Service 1</option>
+              <option>Service 2</option>
+              <option>Service 3</option>
+            </select>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="expert">Expert</label>
+            <select id="expert" class="form-control" required>
+              <option selected disabled value="">Choose an expert...</option>
+              <option>Expert 1</option>
+              <option>Expert 2</option>
+              <option>Expert 3</option>
+            </select>
           </div>
         </div>
-        <div class="row mt-4">
-          <div class="col-md-4 d-flex">
-            <div class="service-box">
-              <i class="fas fa-hotel service-icon"></i>
-              <h3 class="service-title">Hotel Booking</h3>
-              <p class="service-description">Find and book the best hotels at the most competitive prices, tailored to your needs.</p>
-            </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="date">Date</label>
+            <input type="date" id="date" class="form-control" required>
           </div>
-          <div class="col-md-4 d-flex">
-            <div class="service-box">
-              <i class="fas fa-map-marked-alt service-icon"></i>
-              <h3 class="service-title">Local Attractions</h3>
-              <p class="service-description">Explore popular local attractions and hidden gems with our curated recommendations.</p>
-            </div>
-          </div>
-          <div class="col-md-4 d-flex">
-            <div class="service-box">
-              <i class="fas fa-utensils service-icon"></i>
-              <h3 class="service-title">Dining Experiences</h3>
-              <p class="service-description">Discover the best dining spots and culinary experiences the city has to offer.</p>
-            </div>
+          <div class="form-group col-md-6">
+            <label for="time">Time</label>
+            <input type="time" id="time" class="form-control" required>
           </div>
         </div>
-        <div class="row mt-4">
-          <div class="col-md-4 d-flex">
-            <div class="service-box">
-              <i class="fas fa-plane-departure service-icon"></i>
-              <h3 class="service-title">Travel Arrangements</h3>
-              <p class="service-description">Let us handle your travel arrangements, from flights to local transportation.</p>
-            </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="name">Name</label>
+            <input type="text" id="name" class="form-control" placeholder="Your name" required>
           </div>
-          <div class="col-md-4 d-flex">
-            <div class="service-box">
-              <i class="fas fa-umbrella-beach service-icon"></i>
-              <h3 class="service-title">Catalogue of Select Resorts</h3>
-              <p class="service-description">Browse our curated catalogue of select resorts for an exclusive and luxurious stay.</p>
-            </div>
-          </div>
-          <div class="col-md-4 d-flex">
-            <div class="service-box">
-              <i class="fas fa-calendar-alt service-icon"></i>
-              <h3 class="service-title">Event Planning</h3>
-              <p class="service-description">Plan and host memorable events with our expert event planning services.</p>
-            </div>
+          <div class="form-group col-md-6">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" class="form-control" placeholder="Your phone number" required>
           </div>
         </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" class="form-control" placeholder="Your email" required>
+        </div>
+        <div class="btn-center">
+          <button type="submit" class="btn btn-primary btn-book mt-3">Book Appointment</button>
+        </div>
+      </form>
+      <div id="confirmation" class="mt-4" style="display: none;">
+        <h3 class="text-center text-success">Thank you for booking!</h3>
+        <p class="text-center">Your appointment has been confirmed.</p>
       </div>
-    </section>
+    </div>
 
-    <!-- Footer Section -->
-    <footer class="footer">
+    <!-- Footer -->
+    <footer class="footer mt-auto py-3 bg-light">
       <div class="container">
         <div class="row">
           <div class="col-md-4 footer-column">
@@ -123,11 +123,19 @@
         </div>
       </div>
     </footer>
-
   </div>
 
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('#booking-form').on('submit', function(e) {
+        e.preventDefault();
+        $('#booking-form').hide();
+        $('#confirmation').show();
+      });
+    });
+  </script>
 </body>
 </html>

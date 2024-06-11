@@ -1,0 +1,50 @@
+.navbar-brand {
+  font-family: 'Encode Sans Semi Condensed', sans-serif;
+  font-size: 29px;
+  font-weight: 500;
+  text-decoration: none;
+  color: inherit; 
+  transition: color 0.3s ease; 
+}
+
+.navbar-light {
+  background-color: white !important;
+}
+
+.header .navbar-brand:hover {
+  color: #229e6f; 
+}
+
+.navbar-nav {
+  margin: 0 auto;
+}
+
+.auth-buttons .btn-primary.book {
+  background-color: #2AB683 !important;
+  color: #fff !important;
+  border: none !important;
+  padding: 10px 35px !important;
+  margin-left: 10px !important;
+  cursor: pointer !important;
+  border-radius: 25px !important;
+  font-family: 'Roboto', sans-serif !important;
+  font-size: 15px !important;
+  font-weight: 500 !important;
+  transition: background-color 0.3s ease, color 0.3s ease !important; 
+  box-shadow: none !important;
+}
+
+.auth-buttons .btn-primary.book:hover,
+.auth-buttons .btn-primary.book:active,
+.auth-buttons .btn-primary.book:focus {
+  background-color: #229e6f !important; 
+  color: #fff !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus,
+.navbar-nav .nav-link:active {
+  color: #229e6f; 
+}

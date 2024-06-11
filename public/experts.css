@@ -1,0 +1,88 @@
+.border-bottom {
+  border-bottom: 2px solid #000; 
+}
+
+.section-title {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+.section-subtitle {
+  font-size: 18px;
+  margin-bottom: 40px;
+  color: #6c757d;
+}
+
+.expert-section {
+  padding: 50px 0;
+  background-color: white; 
+}
+
+.expert-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin-bottom: 30px;
+  transition: transform 0.3s ease;
+  height: 100%;
+}
+
+.expert-card:hover {
+  transform: translateY(-10px);
+}
+
+.expert-card img {
+  width: 100%;
+  height: 400px; 
+  object-fit: cover;
+  object-position: top;
+}
+
+.expert-card-body {
+  padding: 20px;
+  text-align: center;
+}
+
+.expert-card-body h3 {
+  font-size: 1.5rem;
+  margin: 10px 0 5px;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+}
+
+.expert-card-body h4 {
+  font-size: 1rem;
+  color: #6c757d;
+  margin-bottom: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
+
+.expert-card-body p {
+  font-size: 0.9rem;
+  color: #6c757d;
+  margin-bottom: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.expert-card-body .social-icons {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.expert-card-body .social-icons li {
+  margin: 0 10px;
+}
+
+.expert-card-body .social-icons li a {
+  color: #2AB683;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.expert-card-body .social-icons li a:hover {
+  color: #229e6f;
+}

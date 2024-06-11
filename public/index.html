@@ -6,15 +6,20 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <link rel="stylesheet" href="index.css">
-  <title>Hotel Booking</title>
+  <link rel="stylesheet" href="footer.css">
+  <link rel="stylesheet" href="header.css">
+  <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Condensed:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <title>Goatel</title>
 </head>
+
 <body class="bg-white">
 
   <div class="d-flex flex-column min-vh-100">
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light header">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Goatel</a>
+        <a class="navbar-brand" href="index.html">Goatel</a> 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -24,17 +29,11 @@
               <a class="nav-link" href="services.html">Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="experts.html">Our Experts</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="faq.html">FAQ</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact Us</a>
+              <a class="nav-link" href="experts.html">Experts</a>
             </li>
           </ul>
           <div class="auth-buttons">
-            <button class="btn btn-primary book">Book</button>
+            <button class="btn btn-primary book" onclick="window.location.href='booking.html'">Book</button>
           </div>
         </div>
       </div>
@@ -49,224 +48,239 @@
         </div>
       </div>
       <div class="hero-image">
-        <img src="Hotel.png" alt="Hotel Lobby" class="img-fluid">
-      </div>
-    </div>
-
-    <!-- Popular Hotel Chains Section -->
-    <div class="container popular-section">
-      <h2 class="text-left">Popular Hotel Chains</h2>
-      <div class="card-carousel">
-        <button class="carousel-control prev"><i class="fas fa-chevron-left"></i></button>
-        <div class="carousel-track-container">
-          <ul class="carousel-track">
-            <li class="carousel-slide">
-              <div class="card custom-chip h-100">
-                <div class="card-body">
-                  <h5 class="card-title">Hotel Chain 1</h5>
-                  <p class="card-text">Description of Hotel Chain 1</p>
-                </div>
-              </div>
-            </li>
-            <li class="carousel-slide">
-              <div class="card custom-chip h-100">
-                <div class="card-body">
-                  <h5 class="card-title">Hotel Chain 2</h5>
-                  <p class="card-text">Description of Hotel Chain 2</p>
-                </div>
-              </div>
-            </li>
-            <li class="carousel-slide">
-              <div class="card custom-chip h-100">
-                <div class="card-body">
-                  <h5 class="card-title">Hotel Chain 3</h5>
-                  <p class="card-text">Description of Hotel Chain 3</p>
-                </div>
-              </div>
-            </li>
-            <li class="carousel-slide">
-              <div class="card custom-chip h-100">
-                <div class="card-body">
-                  <h5 class="card-title">Hotel Chain 4</h5>
-                  <p class="card-text">Description of Hotel Chain 4</p>
-                </div>
-              </div>
-            </li>
-            <li class="carousel-slide">
-              <div class="card custom-chip h-100">
-                <div class="card-body">
-                  <h5 class="card-title">Hotel Chain 5</h5>
-                  <p class="card-text">Description of Hotel Chain 5</p>
-                </div>
-              </div>
-            </li>
-            <li class="carousel-slide">
-              <div class="card custom-chip h-100">
-                <div class="card-body">
-                  <h5 class="card-title">Hotel Chain 6</h5>
-                  <p class="card-text">Description of Hotel Chain 6</p>
-                </div>
-              </div>
-            </li>
-            <li class="carousel-slide">
-              <div class="card custom-chip h-100">
-                <div class="card-body">
-                  <h5 class="card-title">Hotel Chain 7</h5>
-                  <p class="card-text">Description of Hotel Chain 7</p>
-                </div>
-              </div>
-            </li>
-            <li class="carousel-slide">
-              <div class="card custom-chip h-100">
-                <div class="card-body">
-                  <h5 class="card-title">Hotel Chain 8</h5>
-                  <p class="card-text">Description of Hotel Chain 8</p>
-                </div>
-              </div>
-            </li>
-            <li class="carousel-slide">
-              <div class="card custom-chip h-100">
-                <div class="card-body">
-                  <h5 class="card-title">Hotel Chain 9</h5>
-                  <p class="card-text">Description of Hotel Chain 9</p>
-                </div>
-              </div>
-            </li>
-            <li class="carousel-slide">
-              <div class="card custom-chip h-100">
-                <div class="card-body">
-                  <h5 class="card-title">Hotel Chain 10</h5>
-                  <p class="card-text">Description of Hotel Chain 10</p>
-                </div>
-              </div>
-            </li>
-          </ul>
-        </div>
-        <button class="carousel-control next"><i class="fas fa-chevron-right"></i></button>
+        <img src="assets/Hotel.png" alt="Hotel Lobby" class="img-fluid">
       </div>
     </div>
 
     <!-- Popular Hotels Section -->
-    <div class="container popular-section">
+    <div class="container popular-hotels mt-5 custom-container">
       <h2 class="text-left">Popular Hotels</h2>
-      <div class="card-carousel">
-        <button class="carousel-control prev"><i class="fas fa-chevron-left"></i></button>
-        <div class="carousel-track-container">
-          <ul class="carousel-track">
-            <li class="carousel-slide">
-              <div class="card custom-chip h-100">
-                <div class="card-body">
-                  <h5 class="card-title">Hotel 1</h5>
-                  <p class="card-text">Description of Hotel 1</p>
-                </div>
-              </div>
-            </li>
-            <li class="carousel-slide">
-              <div class="card custom-chip h-100">
-                <div class="card-body">
-                  <h5 class="card-title">Hotel 2</h5>
-                  <p class="card-text">Description of Hotel 2</p>
-                </div>
-              </div>
-            </li>
-            <li class="carousel-slide">
-              <div class="card custom-chip h-100">
-                <div class="card-body">
-                  <h5 class="card-title">Hotel 3</h5>
-                  <p class="card-text">Description of Hotel 3</p>
-                </div>
-              </div>
-            </li>
-            <li class="carousel-slide">
-              <div class="card custom-chip h-100">
-                <div class="card-body">
-                  <h5 class="card-title">Hotel 4</h5>
-                  <p class="card-text">Description of Hotel 4</p>
-                </div>
-              </div>
-            </li>
-            <li class="carousel-slide">
-              <div class="card custom-chip h-100">
-                <div class="card-body">
-                  <h5 class="card-title">Hotel 5</h5>
-                  <p class="card-text">Description of Hotel 5</p>
-                </div>
-              </div>
-            </li>
-            <li class="carousel-slide">
-              <div class="card custom-chip h-100">
-                <div class="card-body">
-                  <h5 class="card-title">Hotel 6</h5>
-                  <p class="card-text">Description of Hotel 6</p>
-                </div>
-              </div>
-            </li>
-            <li class="carousel-slide">
-              <div class="card custom-chip h-100">
-                <div class="card-body">
-                  <h5 class="card-title">Hotel 7</h5>
-                  <p class="card-text">Description of Hotel 7</p>
-                </div>
-              </div>
-            </li>
-            <li class="carousel-slide">
-              <div class="card custom-chip h-100">
-                <div class="card-body">
-                  <h5 class="card-title">Hotel 8</h5>
-                  <p class="card-text">Description of Hotel 8</p>
-                </div>
-              </div>
-            </li>
-            <li class="carousel-slide">
-              <div class="card custom-chip h-100">
-                <div class="card-body">
-                  <h5 class="card-title">Hotel 9</h5>
-                  <p class="card-text">Description of Hotel 9</p>
-                </div>
-              </div>
-            </li>
-            <li class="carousel-slide">
-              <div class="card custom-chip h-100">
-                <div class="card-body">
-                  <h5 class="card-title">Hotel 10</h5>
-                  <p class="card-text">Description of Hotel 10</p>
-                </div>
-              </div>
-            </li>
-          </ul>
+      <p class="text-description">Discover top hotels our guests love</p>
+      <div class="chip-container-wrapper position-relative">
+        <div class="chip-container d-flex hotels-container">
+          <div class="card hotel-card">
+            <img src="assets/TheRitzCarlton.jpg" class="card-img-top" alt="The Ritz-Carlton">
+            <div class="card-body">
+              <h5 class="card-title">The Ritz-Carlton</h5>
+              <p class="card-text">Paris, France</p>
+            </div>
+          </div>
+          <div class="card hotel-card">
+            <img src="assets/BurjAlArabJumeirah.jpg" class="card-img-top" alt="Burj Al Arab Jumeirah">
+            <div class="card-body">
+              <h5 class="card-title">Burj Al Arab Jumeirah</h5>
+              <p class="card-text">Dubai, United Arab Emirates</p>
+            </div>
+          </div>
+          <div class="card hotel-card">
+            <img src="assets/ThePlaza.jpg" class="card-img-top" alt="The Plaza">
+            <div class="card-body">
+              <h5 class="card-title">The Plaza</h5>
+              <p class="card-text">New York City, USA</p>
+            </div>
+          </div>
+          <div class="card hotel-card">
+            <img src="assets/MarinaBaySands.jpeg" class="card-img-top" alt="Marina Bay Sands">
+            <div class="card-body">
+              <h5 class="card-title">Marina Bay Sands</h5>
+              <p class="card-text">Singapore</p>
+            </div>
+          </div>
+          <div class="card hotel-card">
+            <img src="assets/TalMahalPalace.jpg" class="card-img-top" alt="Taj Mahal Palace">
+            <div class="card-body">
+              <h5 class="card-title">Taj Mahal Palace</h5>
+              <p class="card-text">Mumbai, India</p>
+            </div>
+          </div>
+          <div class="card hotel-card">
+            <img src="assets/Ramada.jpeg" class="card-img-top" alt="Ramada">
+            <div class="card-body">
+              <h5 class="card-title">Ramada</h5>
+              <p class="card-text">Ottawa, Ontario</p>
+            </div>
+          </div>
         </div>
-        <button class="carousel-control next"><i class="fas fa-chevron-right"></i></button>
+        <div class="arrow-button left-arrow" id="prev-button-hotels" style="display: none;">
+          <button class="btn btn-light"><i class="fas fa-arrow-left"></i></button>
+        </div>
+        <div class="arrow-button right-arrow" id="next-button-hotels">
+          <button class="btn btn-light"><i class="fas fa-arrow-right"></i></button>
+        </div>
       </div>
     </div>
 
-    <!-- Footer -->
-    <footer class="bg-light text-center text-lg-start mt-auto">
-      <div class="container p-4">
-        <div class="row">
-          <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-            <h5 class="text-uppercase">HotelBooking</h5>
-            <p>Book your stay now and enjoy exclusive discounts and best deals on hotels.</p>
+    <!-- Trending Destinations Section -->
+    <div class="container trending-destinations mt-5 custom-container">
+      <h2 class="text-left">Trending Destinations</h2>
+      <p class="text-description">Explore the most popular destinations right now</p>
+      <div class="chip-container-wrapper position-relative">
+        <div class="chip-container d-flex destinations-container">
+          <div class="card destination-card">
+            <img src="assets/Paris.jpg" class="card-img-top" alt="Paris">
+            <div class="card-body">
+              <h5 class="card-title">Paris</h5>
+              <p class="card-text">France</p>
+            </div>
           </div>
-          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-            <h5 class="text-uppercase">Links</h5>
-            <ul class="list-unstyled mb-0">
-              <li><a href="#" class="text-dark">Home</a></li>
-              <li><a href="#" class="text-dark">Features</a></li>
-              <li><a href="#" class="text-dark">Our Experts</a></li>
-              <li><a href="#" class="text-dark">Contact</a></li>
-            </ul>
+          <div class="card destination-card">
+            <img src="assets/New York.jpeg" class="card-img-top" alt="New York City">
+            <div class="card-body">
+              <h5 class="card-title">New York City</h5>
+              <p class="card-text">USA</p>
+            </div>
+          </div>
+          <div class="card destination-card">
+            <img src="assets/Japan.jpg" class="card-img-top" alt="Tokyo">
+            <div class="card-body">
+              <h5 class="card-title">Tokyo</h5>
+              <p class="card-text">Japan</p>
+            </div>
+          </div>
+          <div class="card destination-card">
+            <img src="assets/Dubai.jpeg" class="card-img-top" alt="Dubai">
+            <div class="card-body">
+              <h5 class="card-title">Dubai</h5>
+              <p class="card-text">United Arab Emirates</p>
+            </div>
+          </div>
+          <div class="card destination-card">
+            <img src="assets/London.jpeg" class="card-img-top" alt="London">
+            <div class="card-body">
+              <h5 class="card-title">London</h5>
+              <p class="card-text">United Kingdom</p>
+            </div>
+          </div>
+          <div class="card destination-card">
+            <img src="assets/Sydney.jpg" class="card-img-top" alt="Sydney">
+            <div class="card-body">
+              <h5 class="card-title">Sydney</h5>
+              <p class="card-text">Australia</p>
+            </div>
+          </div>
+        </div>
+        <div class="arrow-button left-arrow" id="prev-button-destinations" style="display: none;">
+          <button class="btn btn-light"><i class="fas fa-arrow-left"></i></button>
+        </div>
+        <div class="arrow-button right-arrow" id="next-button-destinations">
+          <button class="btn btn-light"><i class="fas fa-arrow-right"></i></button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 footer-column">
+            <h3 class="logo">Goatel</h3>
+            <p class="description">Finding your dream hotel since 2022!</p>
+            <p class="copyright">Scoopy © 2022</p>
+          </div>
+          <div class="col-md-4 footer-column"></div>
+          <div class="col-md-4 footer-column">
+            <div class="info-section">
+              <div>
+                <h3 class="footer-title">Hours</h3>
+                <p class="footer-text">Mon-Fri: 9am - 6pm</p>
+                <p class="footer-text">Sat-Sun: 10am - 4pm</p>
+              </div>
+              <div>
+                <h3 class="footer-title">Contact Us</h3>
+                <p class="footer-text">123 Damn Daniel</p>
+                <p class="footer-text">(123) 456-7890</p>
+                <p class="footer-text">contact@goatel.com</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="text-center p-3 bg-light">
-        © 2024 HotelBooking. All Rights Reserved.
-      </div>
     </footer>
-  </div>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <script src="index.js"></script> <!-- Link to your custom JavaScript file -->
+  <script>
+    $(document).ready(function(){
+      var cardIndexHotels = 0;
+      var totalCardsHotels = $('.hotels-container .card.hotel-card').length;
+      var cardIndexDestinations = 0;
+      var totalCardsDestinations = $('.destinations-container .card.destination-card').length;
+      var cardsVisible = 4;
+      
+      function updateArrowVisibility(section) {
+        if (section === 'hotels') {
+          if (cardIndexHotels > 0) {
+            $('#prev-button-hotels').show();
+          } else {
+            $('#prev-button-hotels').hide();
+          }
+
+          if (cardIndexHotels < totalCardsHotels - cardsVisible) {
+            $('#next-button-hotels').show();
+          } else {
+            $('#next-button-hotels').hide();
+          }
+        } else if (section === 'destinations') {
+          if (cardIndexDestinations > 0) {
+            $('#prev-button-destinations').show();
+          } else {
+            $('#prev-button-destinations').hide();
+          }
+
+          if (cardIndexDestinations < totalCardsDestinations - cardsVisible) {
+            $('#next-button-destinations').show();
+          } else {
+            $('#next-button-destinations').hide();
+          }
+        }
+      }
+
+      $('#next-button-hotels').on('click', function() {
+        if (cardIndexHotels < totalCardsHotels - cardsVisible) {
+          cardIndexHotels++;
+          $('.hotels-container').css('transform', 'translateX(' + (-cardIndexHotels * 20) + '%)');
+          updateArrowVisibility('hotels');
+        }
+      });
+
+      $('#prev-button-hotels').on('click', function() {
+        if (cardIndexHotels > 0) {
+          cardIndexHotels--;
+          $('.hotels-container').css('transform', 'translateX(' + (-cardIndexHotels * 20) + '%)');
+          updateArrowVisibility('hotels');
+        }
+      });
+
+      $('#next-button-destinations').on('click', function() {
+        if (cardIndexDestinations < totalCardsDestinations - cardsVisible) {
+          cardIndexDestinations++;
+          $('.destinations-container').css('transform', 'translateX(' + (-cardIndexDestinations * 20) + '%)');
+          updateArrowVisibility('destinations');
+        }
+      });
+
+      $('#prev-button-destinations').on('click', function() {
+        if (cardIndexDestinations > 0) {
+          cardIndexDestinations--;
+          $('.destinations-container').css('transform', 'translateX(' + (-cardIndexDestinations * 20) + '%)');
+          updateArrowVisibility('destinations');
+        }
+      });
+
+      updateArrowVisibility('hotels');
+      updateArrowVisibility('destinations');
+
+      $('.chip-container-wrapper').hover(
+        function() {
+          var section = $(this).parent().hasClass('popular-hotels') ? 'hotels' : 'destinations';
+          updateArrowVisibility(section);
+        }, function() {
+          $('.arrow-button').hide();
+        }
+      );
+    });
+  </script>
 </body>
 </html>

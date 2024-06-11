@@ -1,0 +1,27 @@
+.border-bottom {
+  border-bottom: 2px solid #000; 
+}
+
+.btn-center {
+  display: flex;
+  justify-content: center;
+}
+.btn-book {
+  background-color: #2AB683;
+  border-color: #2AB683;
+  width: 500px;
+  cursor: pointer !important;
+  color: #fff !important;
+  transition: background-color 0.3s ease, color 0.3s ease !important; 
+  box-shadow: none !important;
+}
+
+.btn-book:hover,
+.btn-book:active,
+.btn-book:focus {
+  background-color: #229e6f !important; 
+  color: #fff !important;
+  outline: none !important;
+  box-shadow: none !important;
+  outline: none !important; 
+}

@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Condensed:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+.footer {
+  background-color: #f8f9fa; 
+  color: #343a40;
+  padding: 10px 0; 
+}
+
+.footer .footer-title {
+  font-size: 24px;
+  margin-bottom: 10px; 
+  padding-top: 10px; 
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500; 
+}
+
+.footer .footer-text {
+  font-size: 14px; 
+  font-family: 'Roboto', sans-serif;
+  color: #6c757d;
+  line-height: 1; 
+}
+
+.footer .footer-column {
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.footer .logo {
+  font-family: 'Encode Sans Semi Condensed', sans-serif;
+  font-size: 24px;
+  padding-top: 15px; 
+  font-weight: 500; 
+}
+
+.footer .description {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: #6c757d;
+}
+
+.footer .copyright {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  color: #b3b3b3;
+  position: absolute;
+  bottom: 0;
+}
+
+.footer .info-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer .info-section > div {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.footer .info-section > div:last-child {
+  margin-right: 0;
+}
